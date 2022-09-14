@@ -1,0 +1,94 @@
+*{ /* para resetar e tirar os espaços que o nav coloca altomatico */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;/* Tirando os pontinhos da lista */
+}
+
+body {
+    background-image:url(./assets/bg.jpg) ; /* pegar uma imagem */
+    background-position: top center; /* posicionamento da imagem */
+    background-size: 100% auto; /*tamanho da tela 1º largura e 2º altura/profundidade */
+    background-repeat: no-repeat; /* para nao repetir a imagem */
+    background-color: #121214; /* cor de fundo */
+}
+
+body *{
+    font-family: 'Inter', sans-serif;
+    line-height: 160%; /* altura da linha */
+}
+
+main {
+    max-width: 580px; /* largura maxima */
+    width: 90%; /* para telas que forem menores de 580px */
+    margin: auto; /* calculo altomatico para as bordas */
+
+    display: grid;/*deixar um em baixo do outro/coluna*/
+    gap: 24px; /* espaço entre as box */
+
+    margin-top: 32px; /* para separar do que esta emcima */
+}
+
+section{
+    color: white;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%); /* para fazer o gradiente */
+    padding-top: 4px;
+    padding-left: 4px;
+    border-radius: 10px;
+
+}
+
+section div{
+    background-color: #2a2634; /* cor do fundo do cartão*/
+    padding: 32px;/* distancia das laterais */
+    padding-top: 24px; /* distancia top*/
+    border-radius: 8px;
+}
+
+section h2{
+    letter-spacing: -0.47px;
+}
+
+section p{
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+}
+
+section ul{
+    display: flex; /* colocar as caixas na mesma linha.  */
+    flex-wrap: wrap; /* para se tiver muitos na lista, ele quebra a linha */
+    gap: 16px; /* trabalha em conjunto com o display flex, gap é espaço entre as caixas */
+
+    margin-top: 24px;
+}
+
+.game-list img{
+    width: 90px; /* tamanho da imagem  */
+    border-radius: 8px; /* para aredondar as bordas  */
+}
+
+.channel-list img{
+    width: 70px;
+    border-radius: 50%;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    padding-top: 32px;
+    gap: 32px;
+}
+
+header img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%); /* para fazer o gradiente */
+    padding: 4px;  
+}
+
